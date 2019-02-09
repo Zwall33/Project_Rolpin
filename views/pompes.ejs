@@ -1,0 +1,34 @@
+<html>
+<img src="./images/image_fond.jpg" class="fond">
+<head>   
+        <% include partials/head_pompes %> 
+    
+	<title>Jardin connecté</title>
+</head>
+
+<body> 
+ 
+    <% include partials/menu %>
+
+    <table class="pompes">
+      <tr>
+        <th><h1 class="pompes">Pompe 1</h1></th>
+        <th><h1 class="pompes">Pompe 2</h1></th> 
+
+      </tr>
+      <tr>
+        <td><img id="Pompe1" class="rotating_null" src = "./images/pompe_off.png" onclick="changeImage('Pompe1')"/></td>
+        <td><img id="Pompe2" class="rotating_null" src = "./images/pompe_off.png" onclick="changeImage('Pompe2')"/></td>
+      </tr>
+      <tr>
+        <th><h1 class="pompes">Pompe 3</h1></th>
+        <th><h1 class="pompes">Pompe 4</h1></th>
+      </tr>
+      <tr>
+        <td><img id="Pompe3" class="rotating_null" src = "./images/pompe_off.png" onclick="changeImage('Pompe3')"/></td>
+        <td><img id="Pompe4" class="rotating_null" src = "./images/pompe_off.png" onclick="changeImage('Pompe4')"/></td>
+      </tr>
+    </table>
+    <% include partials/script %>
+</body>
+</html>
